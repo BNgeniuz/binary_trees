@@ -1,6 +1,11 @@
 #ifndef BINARY_TREE_H
 #define BINARY_TREE_H
 
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
 /* structs */
 /**
  *  * struct binary_tree_s - Binary tree node
@@ -52,4 +57,6 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int binary_tree_is_bst(const binary_tree_t *tree);
 
+/* other functions */
+void binary_tree_print(const binary_tree_t *tree);
 #endif
